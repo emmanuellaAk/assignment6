@@ -23,3 +23,36 @@ function Header(){
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+      flex: 1,
+  },
+  menuImage: {
+      top: 72,
+      marginLeft: 20,
+      width: 32,
+      height: 33,
+  },
+  logoImage:{
+      top: 38,
+      width: 99,
+      height: 40,
+      alignSelf: 'center'
+  },
+  searchImage:{
+      top: 3,
+      left: 300,
+      width: 30,
+      height: 30
+  },
+  shoppingImage:{
+      top: -28,
+      left: 345,
+      width: 30,
+      height: 30,
+  }
+})
+
+
+export default Header;
