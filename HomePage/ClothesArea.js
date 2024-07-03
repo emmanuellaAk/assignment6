@@ -34,3 +34,57 @@ export default function ClothesArea() {
       </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'space-between',
+      padding: 33,
+      top: -95,
+      height: 1530
+    },
+    card: {
+      width: '45%', 
+      marginBottom: -40,
+      padding: 10,
+      paddingLeft: 10,
+      backgroundColor: '#fff',
+      alignItems: 'flex-start',
+      right: 20
+    },
+    image: {
+      width: 180,
+      height: 250,
+    },
+    name: {
+      fontSize: 18,
+      fontWeight: '300',
+      marginVertical: 5,
+      textAlign: 'left',
+      left: 4
+    },
+    description: {
+      fontSize: 14,
+      color: '#737373',
+      textAlign: 'left',
+      left: 4,
+      bottom: 3,
+      fontWeight: '300',
+    },
+    price: {
+      fontSize: 16,
+      fontWeight: '300',
+      color: '#D18035',
+      marginVertical: 5,
+      textAlign: 'left',
+      left: 4,
+      bottom: 5
+    },
+    addButton: {
+      width: 30,
+      height: 30,
+      bottom: 132,
+      left: 135,
+    },
+})
