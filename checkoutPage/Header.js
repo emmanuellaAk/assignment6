@@ -1,62 +1,76 @@
-import { StyleSheet, View, Image, Text} from "react-native";
+import React from "react";
+import { StyleSheet, View, Image, Text, TouchableOpacity} from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Header(){
+    const navigation = useNavigation();
     return(
         <>
         <View style={styles.header}>
-            <Image style={styles.logo} source={require('../assets/Logo.png')}></Image>
+            <TouchableOpacity style={styles.return} onPress={() => navigation.navigate('Home')}>
+                <Image style={styles.logo} source={require('../assets/Logo.png')}></Image>
+            </TouchableOpacity>
             <Image style={styles.search} source={require('../assets/Search-2.png')}></Image>
         </View>
 
-        <View>
-        <Image style={styles.bottomLine} source={require('../assets/bottomLine.png')}></Image>
-        <Text style={styles.checkout}>CHECKOUT</Text>
+        <View style={styles.checkoutContainer}>
+            <Image style={styles.bottomLine} source={require('../assets/bottomLine.png')}></Image>
+            <Text style={styles.checkout}>CHECKOUT</Text>
         </View>
         </>
     )
 }
 
 const styles = StyleSheet.create({
-  header: {
-      flex: 1,
-      justifyContent: 'space-between',
-      alignContent: 'center',
-      flexDirection: 'row',
-      borderColor: 'black',
-      width: '100%',
-  },
+    header: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignContent: 'center',
+        width: '100%',
+        paddingTop: 20,
+        paddingHorizontal: 20
+    },
 
-  logo:{
-      top: 68,
-      width: 102,
-      height: 41,
-      left: 141,
-      
-  },
+    return: {
+        position: 'absolute',
+        left: 160,
+        top: 60
+    },
 
-  search:{
-      top: 73,
-      right:25,
-      width: 30,
-      height: 30
-  },
+    logo:{
+        width: 99,
+        height: 40,
+    },
 
-  checkout: {
-      top: 50,
-      fontSize: 30,
-      letterSpacing: 6,
-      alignSelf: 'center',
-      fontWeight:'300',
-  },
+    search:{
+        width: 30,
+        height: 30,
+        top:45,
+        left: 330,
+    },
 
-  bottomLine: {
-      top: 125,
-      width: 200,
-      height: 60,
-      right: 10,
-      alignSelf: 'center',
-  },
+    checkoutContainer:{
+        position: 'relative',
+        alignItems: 'center',
+        marginTop: 20,
+        height: 100,
+    },
 
+    checkout: {
+        position: 'absolute',
+        top: 70,
+        right: 103,
+        fontSize: 27,
+        letterSpacing: 6,
+        fontWeight: '300',
+        alignSelf: 'center',
+    },
 
-
+    bottomLine: {
+        position: 'absolute',
+        top: 80,
+        width: 200,
+        height: 60,
+        alignSelf: 'center',
+    },
 })

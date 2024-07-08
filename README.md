@@ -1,0 +1,54 @@
+# React Native Shopping Cart App
+
+## Description
+
+This is a simple shopping cart application built with React Native. 
+It allows users to view a list of available products, add products to their cart, remove products from their cart, and view the items in their cart. 
+The selected items are stored locally on the device using AsyncStorage.
+
+## Features
+
+- View a list of available products
+- Add products to the cart
+- Remove products from the cart
+- View items in the cart
+- Local storage of cart items using AsyncStorage
+
+## HomeScreen
+- Displays a list of available products.
+- Components:
+- Header: The app's header section.
+- Story: Displays the "OUR STORY" section.
+- ClothesArea: Displays the list of available products.
+
+## CartScreen
+- Displays the selected items in the cart.
+- Components:
+- Header: The app's header section with navigation to HomeScreen.
+- Checkout: Displays the list of items in the cart.
+- Footer: Displays the total amount and checkout button.
+
+## Checkout
+- Component that lists the selected items in the cart.
+- Each item can be removed from the cart.
+- Footer
+- Displays the total amount of items in the cart and a checkout button.
+
+## Header
+- Used in both HomeScreen and CartScreen for navigation and app branding.
+- ClothesArea
+- Displays a list of products available for purchase.
+- Each product has an "Add to cart" button.
+
+## Context
+- CartContext
+- Manages the state of the cart, including adding and removing items.
+- Local Storage
+- Uses AsyncStorage to store selected items locally on the device.
+
+## Implementation of Data Storage
+- The application uses AsyncStorage to store the cart items locally on the device. 
+- This ensures that the items added to the cart persist even when the app is closed and reopened.
+- Adding to Cart: When a product is added to the cart, it is also saved in AsyncStorage.
+- Removing from Cart: When a product is removed from the cart, it is also removed from AsyncStorage.
+- Fetching Cart Items: On app launch, the cart items are fetched from AsyncStorage and loaded into the application's state.

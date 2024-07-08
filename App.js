@@ -1,8 +1,22 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import CheckoutScreen from './checkoutPage/checkoutScreen';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './HomePage/HomeScreen';
+import CartScreen from './CheckoutPage/CartScreen';
+import { CartProvider } from './CartContext';
 
-const Stack = createStackNavigator();
 
+const Stack = createNativeStackNavigator();
 
+export default function App() {
+  return (
+    <CartProvider>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName='Home' screenOptions={{headerShown: false}}>
+          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Cart" component={CartScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </CartProvider>
+  );
+}
