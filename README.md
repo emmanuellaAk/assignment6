@@ -52,9 +52,9 @@ The selected items are stored locally on the device using AsyncStorage.
 - Adding to Cart: When a product is added to the cart, it is also saved in AsyncStorage.
 - Removing from Cart: When a product is removed from the cart, it is also removed from AsyncStorage.
 - Fetching Cart Items: On app launch, the cart items are fetched from AsyncStorage and loaded into the application's state.
+ ## Screenshots
 ![photo_2024-07-08_03-33-25](https://github.com/emmanuellaAk/rn-assignment6-11090094/assets/137521867/ff2a5e22-ab76-45cd-9460-3fe41af479bf)
 
-##Screenshots
 ![photo_2024-07-03_22-10-09](https://github.com/emmanuellaAk/rn-assignment6-11090094/assets/137521867/521e0d1e-ee17-493c-991a-343141dcf076)
 
 ![photo_2024-07-03_22-09-53](https://github.com/emmanuellaAk/rn-assignment6-11090094/assets/137521867/47231231-79b6-4b86-9743-6945530c1e33)
