@@ -55,5 +55,5 @@ The selected items are stored locally on the device using AsyncStorage.
 
 ##Screenshots
 ![photo_2024-07-03_22-10-09](https://github.com/emmanuellaAk/rn-assignment6-11090094/assets/137521867/521e0d1e-ee17-493c-991a-343141dcf076)
-![photo_2024-07-03_22-10-01](https://github.com/emmanuellaAk/rn-assignment6-11090094/assets/137521867/98687543-88c8-4a73-ac39-c7fee3bc0651)
+
 ![photo_2024-07-03_22-09-53](https://github.com/emmanuellaAk/rn-assignment6-11090094/assets/137521867/47231231-79b6-4b86-9743-6945530c1e33)
