@@ -1,30 +1,28 @@
 import React from "react";
-import { StyleSheet, View, ScrollView } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Header from "./Header";
 import Story from "./Story";
-import ClothesArea from "./ClothesArea";
+import Products from "./Product";
 
-function HomeScreen({navigation}){
-    return(
+function HomeScreen({ navigation }) {
+  return (
     <View style={styles.container}>
-        <ScrollView contentContainerStyle={styles.scroll}>
-        <Header navigation={navigation}/>
-        <Story/>
-        <ClothesArea/>
-        </ScrollView>
+      <Header navigation={navigation} />
+      <Story />
+      <Products navigation={navigation} />
     </View>
-    )
+  );
 }
 
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        backgroundColor: '#FFFFFF'
-    },
-
-    scroll:{
-        flexGrow: 1
-    }
-})
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF'
+  }
+});
 
 export default HomeScreen;
+
+
+
+
