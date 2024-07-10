@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './HomePage/HomeScreen';
-import CartScreen from './CheckoutPage/CartScreen';
+import CartScreen from './checkoutPage/CartScreen';
 import { CartProvider } from './CartContext';
 
 

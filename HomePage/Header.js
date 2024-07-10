@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Image, TouchableOpacity} from "react-native";
+import sidebar from  
 import { useNavigation } from "@react-navigation/native";
 
 export default function Header(){
@@ -9,6 +10,9 @@ export default function Header(){
     <View style={styles.container}>
         <View>
             <Image style={styles.headermenu } source={require('../assets/Menu.png')}></Image>
+        </View>
+        <View>
+
         </View>
         <View>
             <Image style={styles.headerlogo} source={require('../assets/Logo.png')}></Image>
