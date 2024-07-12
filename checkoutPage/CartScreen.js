@@ -6,7 +6,7 @@ import Checkout from "./Checkout";
 
 export default function CartScreen({navigation}){
     return(
-        <View style={styles.Appcontainer}>
+        <View style={styles.container}>
             <ScrollView contentContainerStyle={styles.scroll}>
             <Header navigation={navigation}/>
             <Checkout/>
@@ -17,7 +17,7 @@ export default function CartScreen({navigation}){
 }
 
 const styles = StyleSheet.create({
-    Appcontainer:{
+    container:{
         flex:1,
         backgroundColor: '#FFFFFF'
     },
